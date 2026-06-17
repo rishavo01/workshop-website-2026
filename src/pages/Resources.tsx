@@ -11,7 +11,7 @@ export default function Resources() {
 
   return (
     <div className="flex w-full">
-      <div className="flex-1 py-12 px-8 max-w-4xl">
+      <div className="flex-1 py-12 px-4 sm:px-8 max-w-4xl">
         <h1 className="text-3xl font-extrabold text-gray-900 mb-4">Resources</h1>
         <p className="text-gray-600 mb-12 max-w-2xl text-lg leading-relaxed">
           Access all the essential materials for the MERN Stack Workshop. From comprehensive PDF notes to hands-on practice assignments and source code repositories.
@@ -21,8 +21,8 @@ export default function Resources() {
           <FileText className="h-6 w-6 text-blue-600" /> Downloadable Notes
         </h2>
         
-        <div className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden mb-16">
-          <table className="w-full text-left text-sm">
+        <div className="rounded-xl border border-gray-200 bg-white shadow-sm overflow-x-auto mb-16">
+          <table className="w-full text-left text-sm min-w-[600px]">
             <thead className="bg-gray-50 text-xs font-bold uppercase tracking-wider text-gray-500 border-b border-gray-200">
               <tr>
                 <th className="px-6 py-4 font-bold">Title</th>
@@ -130,9 +130,9 @@ export default function Resources() {
           <Lightbulb className="h-6 w-6 text-blue-600" /> Practice Questions
         </h2>
 
-        <div className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm flex items-center justify-between">
-          <div className="flex items-center gap-6">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+        <div className="rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 text-center sm:text-left">
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
               <Lightbulb className="h-8 w-8" />
             </div>
             <div>
@@ -140,7 +140,7 @@ export default function Resources() {
               <p className="text-sm text-gray-600">50+ questions covering Node, React, and MongoDB fundamentals.</p>
             </div>
           </div>
-          <button className="rounded px-6 py-2.5 bg-blue-700 text-white font-bold text-sm hover:bg-blue-800">
+          <button className="w-full sm:w-auto shrink-0 rounded px-6 py-2.5 bg-blue-700 text-white font-bold text-sm hover:bg-blue-800 transition-colors">
             Start Quiz
           </button>
         </div>

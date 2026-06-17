@@ -100,7 +100,7 @@ const ROADMAP = [
 
 export default function Roadmap() {
   return (
-    <div className="py-12 px-8 max-w-4xl">
+    <div className="py-12 px-4 sm:px-8 max-w-4xl">
       <h1 className="text-3xl font-extrabold text-gray-900 mb-4">20-Day Curriculum Roadmap</h1>
       <p className="text-gray-600 mb-12 max-w-2xl text-lg">
         A structured path from absolute beginner to building full-stack applications with the MERN ecosystem.

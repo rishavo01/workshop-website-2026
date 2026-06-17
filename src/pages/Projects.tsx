@@ -62,7 +62,7 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <div className="py-12 px-8 max-w-6xl">
+    <div className="py-12 px-4 sm:px-8 max-w-6xl">
       <h1 className="text-3xl font-extrabold text-gray-900 mb-4">Projects Showcase</h1>
       <p className="text-gray-600 mb-12 max-w-2xl text-lg">
         Apply your learning through building. These projects progress from simple semantic markup to full-stack MERN application architecture.
